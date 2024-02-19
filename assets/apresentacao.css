@@ -1,0 +1,51 @@
+:root {
+    --cor-principal: #121C66;
+    --cor-secundaria: #21218F;
+    --cor-terciaria: #2B2B33;
+    --cor-branca: #FFFFFF;
+    --cor-de-fundo: #0a192f;
+    --cor-font-clara: #ccd6f6;
+    --cor-font: #a8b2d1;
+    --cor-font-verde: #64ffda;
+    --header-height: 3rem;
+    --font-family-roboto: "Roboto Mono", "Fira Code", "Fira Mono", monospace;
+}
+
+.container__apresentacao {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-roboto);
+}
+
+.conteudo__apresentacao {
+    width: 70%;
+}
+
+.apresentacao {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--cor-font-verde);
+}
+
+.apresentacao__nome {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--cor-font-clara);
+}
+
+.apresentacao__profissao {
+    font-size: 3.5rem;
+    margin: 0;
+    color: var(--cor-font);
+}
+
+.apresentacao__texto {
+    width: 55%;
+    color: var(--cor-font);
+    font-size: 1rem;
+}

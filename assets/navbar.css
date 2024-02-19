@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Mono:wght@400;500;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor-principal: #121C66;
+    --cor-secundaria: #21218F;
+    --cor-terciaria: #2B2B33;
+    --cor-branca: #FFFFFF;
+    --cor-de-fundo: #0a192f;
+    --cor-font-clara: #ccd6f6;
+    --cor-font: #a8b2d1;
+    --cor-font-verde: #64ffda;
+    --font-primaria: 'Abhaya Libre';
+    --font-secundaria: Arial, sans-serif;
+
+    --header-height: 3rem;
+    --body-font: 'Open Sans', sans-serif;
+    --font-family-roboto: "Roboto Mono", "Fira Code", "Fira Mono", monospace;
+
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4.2rem;
+    padding: 0 3rem;
+    background-color: #0a192fd9;
+    color: var(--cor-font);
+    z-index: var(--z-fixed);
+    box-shadow: 0 5px 10px rgb(2,12,27,0.7);
+    z-index: 1000;
+    backdrop-filter:  blur(15px);
+    transition: top 0.9s;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+    height: 100%;
+    cursor: auto;
+}
+
+.nav-img img {
+    width: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: right;
+    width: 60%;
+}
+
+.nav-list {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-item:hover {
+    color: var(--cor-font-verde);
+}
+
+.nav__link__number {
+    color: var(--cor-font-verde);
+}
+
+.nav-curriculo {
+    padding: 0.5rem;
+    border: 1px solid var(--cor-font-verde);
+    border-radius: 3px;
+    color: var(--cor-font-verde);
+    font-family: var(--font-family-mono);
+    letter-spacing: 2px;
+}
+
+.nav-curriculo:hover {
+    background-color: var(--cor-font-verde);
+    color: var(--cor-de-fundo);
+}
