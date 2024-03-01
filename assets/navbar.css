@@ -104,8 +104,12 @@ a {
     font-family: 'Roboto Mono', monospace;
 }
 
-.nav-item:hover {
+.nav__link:hover {
     color: var(--cor-font-verde);
+}
+
+.nav__link {
+    color: var(--cor-font);
 }
 
 .nav__link__number {

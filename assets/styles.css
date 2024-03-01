@@ -4,6 +4,7 @@
 @import url(sobre.css);
 @import url(certificados.css);
 @import url(projetos.css); 
+@import url(contato.css);
 
 :root {
     --cor-principal: #121C66;
@@ -35,5 +36,8 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 

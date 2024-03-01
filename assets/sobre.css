@@ -77,13 +77,40 @@
     position: relative;
     width: 400px;
     margin: 3rem 0 0 0;
-    border: 2px solid var(--cor-font-verde);
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--cor-branca);
-    filter:blur(2px) grayscale(40%);
 }
 
-.sobre__foto:hover {
-    filter:  blur(0) brightness(100%) grayscale(0%);
+.sobre__imagem {
+    position: relative;
+    display: inline-block;
+    filter:blur(2px) grayscale(40%);
+    transition: filter 0.5s ease; 
+}
+
+.sobre__imagem:hover {
+    filter: blur(0);
+}
+
+.sobre__imagem::before {
+    content: "";
+    position: absolute;
+    top:48px;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(17, 34, 64, 0.5); 
+    opacity: 1;
+    transition: opacity 0.5s ease; 
+    border-radius: 5px; 
+    z-index: 2;
+}
+
+.sobre__imagem:hover::before {
+    opacity: 0; 
+}
+
+.sobre__imagem:hover {
+    cursor: pointer;
 }

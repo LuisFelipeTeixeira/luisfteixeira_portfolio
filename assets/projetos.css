@@ -14,6 +14,7 @@
     --header-height: 3rem;
     --body-font: 'Open Sans', sans-serif;
     --font-family-roboto: "Roboto Mono", "Fira Code", "Fira Mono", monospace;
+    --font-family-calibre: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 
 }
 
@@ -28,9 +29,11 @@
 }
 
 .projeto__introducao__div {
+    width: 77%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: left;
 }
 
 .projeto__introducao {
@@ -39,7 +42,7 @@
     padding: 1rem;
 }
 
-.projeto__sobre {
+.decoracao__projeto {
     background-color: var(--cor-font);
     width: 250px;
     height: 1px;
@@ -55,20 +58,55 @@
 
 .projeto__conteudo {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     width: 90%;
     padding: 1rem 7rem 7rem 7rem;
 }
 
+.projeto {
+    position: relative;
+    display: inline-block;
+    filter: blur(3px);
+    transition: filter 0.5s ease;
+}
+
+.projeto:hover {
+    filter: blur(0);
+}
+
+.projeto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 34, 64, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.projeto:hover::before {
+    opacity: 0;
+}
+
 .projeto__img {
     width: 650px;
-    height: 400px;
+    height: 350px;
     border-radius: 5px;
+    transition: filter 0.4s ease;
 }
+
+.projeto__img:hover {
+    cursor: pointer;
+}
+
 
 .projeto__titulo {
     color: var(--cor-font-clara);
-    text-align:right;
+    text-align: right;
     font-size: 24px;
 }
 
@@ -118,7 +156,7 @@
 .dividir__conteudo {
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items: end;
 }
 
 
@@ -131,7 +169,7 @@
 
 .projeto__conteudo__contrario {
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: row-reverse;
     width: 80%;
     padding: 1rem 7rem 7rem 7rem;
     align-items: left;
@@ -145,7 +183,7 @@
 
 .projeto__titulo__contrario {
     color: var(--cor-font-clara);
-    text-align:left;
+    text-align: left;
     font-size: 24px;
 }
 
@@ -195,5 +233,28 @@
 .dividir__conteudo__contrario {
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items: start;
+}
+
+
+
+.projetos_link__area {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos_link {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #64ffda;
+    border: 1px solid var(--cor-font-verde);
+    border-radius: 5px;
+}
+
+.projetos_link:hover {
+    transform: translateY(-2px) translateX(-2px);
 }

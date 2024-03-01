@@ -5,10 +5,10 @@ window.addEventListener('scroll', function () {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
-        navbar.style.top = '-80px'; // Esconde o navbar quando a página é rolada para baixo
+        navbar.style.top = '-80px';
     } else {
-        navbar.style.top = '0'; // Mostra o navbar quando a página é rolada para cima
+        navbar.style.top = '0';
     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para lidar com rolagem para cima em dispositivos móveis
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
