@@ -49,12 +49,12 @@ a {
     width: 100vw;
     height: 4.2rem;
     padding: 0 3rem;
-    background-color: #0a192fd9;
     color: var(--cor-font);
     z-index: var(--z-fixed);
-    box-shadow: 0 5px 10px rgb(2,12,27,0.7);
+    box-shadow: 0 5px 10px rgb(2, 12, 27, 0.7);
     z-index: 1000;
-    backdrop-filter:  blur(15px);
+    background-color: #0a192fd9;
+    backdrop-filter: blur(15px);
     transition: top 0.9s;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 .nav-list {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -129,3 +129,80 @@ a {
     background-color: var(--cor-font-verde);
     color: var(--cor-de-fundo);
 }
+
+.menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 900px) {
+    .cabecalho {
+        padding: 0 1rem;
+    }
+    .nav-menu {
+        width: 85%;
+    }
+
+    .nav-perfil {
+        width: 15%;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .nav__link {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 760px) {}
+
+
+@media screen and (max-width: 580px) {
+    .cabecalho {
+        padding: 0;
+    }
+    .nav-list {
+        display: none; 
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        top: calc(100%); 
+        right: 10;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgb(2, 12, 27, 0.7);
+        z-index: 1000;
+        background-color: #0a192fd9;
+        backdrop-filter: blur(15px);
+        transition: top 0.9s;
+    }
+
+    .nav-item {
+        padding: 0.5rem;
+    }
+    .menu-toggle {
+        display: block;
+        width: 65px;
+        height: 65px;
+        font-size: 25px;
+        color: var(--cor-font-clara);
+        right: 0;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .nav-list.active {
+        display: block;
+        text-align: left; 
+        margin-right: 20px;
+    }
+
+    .curriculo__area {
+        display: flex;
+        padding: 0.5rem 0 0 0.5rem;
+    }
+}
+

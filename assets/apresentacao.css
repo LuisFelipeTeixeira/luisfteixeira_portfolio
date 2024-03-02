@@ -49,3 +49,36 @@
     color: var(--cor-font);
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 770px) and (min-width: 760px) {}
+
+
+@media screen and (max-width: 580px) {
+    .container__apresentacao {
+    }
+
+    .conteudo__apresentacao {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 4rem 0 0 4rem;
+    }
+
+    .apresentacao {
+        font-size: 0.8rem;
+    }
+
+    .apresentacao__nome {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao__profissao {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__texto {}
+}
