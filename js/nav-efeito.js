@@ -14,19 +14,28 @@ window.addEventListener('scroll', function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navList = document.querySelector(".nav-list");
     const navLinks = document.querySelectorAll(".nav-list .nav__link");
+    const menuIcon = document.querySelector('#menu-icon');
+    const closeIcon = document.querySelector('#close-icon');
 
-    menuToggle.addEventListener("click", function() {
+
+    menuToggle.addEventListener("click", function () {
         navList.classList.toggle("active");
+
+        if (menuIcon.style.display === 'none') {
+            menuIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        } else {
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        }
     });
 
-    // Adiciona um evento de clique a cada link do menu
-    navLinks.forEach(function(navLink) {
-        navLink.addEventListener("click", function() {
-            // Fecha a barra de navegação removendo a classe 'active'
+    navLinks.forEach(function (navLink) {
+        navLink.addEventListener("click", function () {
             navList.classList.remove("active");
         });
     });

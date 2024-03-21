@@ -1,0 +1,35 @@
+:root {
+    --cor-principal: #121C66;
+    --cor-secundaria: #21218F;
+    --cor-terciaria: #2B2B33;
+    --cor-branca: #FFFFFF;
+    --cor-de-fundo: #0a192f;
+    --cor-font-clara: #ccd6f6;
+    --cor-font: #a8b2d1;
+    --cor-font-verde: #64ffda;
+    --font-primaria: 'Abhaya Libre';
+    --font-secundaria: Arial, sans-serif;
+
+    --header-height: 3rem;
+    --body-font: 'Open Sans', sans-serif;
+    --font-family-roboto: "Roboto Mono", "Fira Code", "Fira Mono", monospace;
+
+}
+
+.container__estudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    font-family: var(--font-family-roboto);
+}
+
+.estudo__introducao__div {} 
+
+.estudo__introducao {
+
+    
+
+}

@@ -5,6 +5,7 @@
 @import url(certificados.css);
 @import url(projetos.css); 
 @import url(contato.css);
+@import url(estudos.css);
 
 :root {
     --cor-principal: #121C66;
@@ -34,6 +35,7 @@ body {
     color: var(--cor-branca);
     font-family: 'Abhaya Libre', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    letter-spacing: 1.3px;
 }
 
 html {

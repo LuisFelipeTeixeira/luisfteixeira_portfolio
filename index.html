@@ -17,9 +17,20 @@
                         <div class="nav-img">
                             <img src="img/logo/sem-fundo-branco.svg" alt"">
                         </div>
-                    </a>                   
+                    </a>
                     <div class="nav-menu">
-                        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                        <button class="menu-toggle" aria-label="Toggle Menu">
+                            <svg id="menu-icon" class="menu-ativo" display="none" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                            <svg id="close-icon" display="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                        </button>
                         <ul class="nav-list">
                             <li class="nav-item"><a href="#sobre" class="nav__link"><span
                                         class="nav__link__number">01.</span> Sobre</a></li>
@@ -29,49 +40,74 @@
                                         class="nav__link__number">03.</span> Projetos</a></li>
                             <li class="nav-item"><a href="#contato" class="nav__link"><span
                                         class="nav__link__number">04.</span> Contato</a></li>
-                            <div class="curriculo__area"><a href="pdf/curriculo.pdf" class="nav-curriculo">Currículo</a></div>
+                            <div class="curriculo__area"><a href="pdf/curriculo.pdf" class="nav-curriculo">Currículo</a>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
         <aside class="link__fixo">
-            <a href="https://github.com/LuisFelipeTeixeira" class="item__fixo"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-github">
-                    <title>GitHub</title>
-                    <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                </svg></a>
-            <a href="https://www.instagram.com/luisftexeira/" class="item__fixo"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-instagram">
-                    <title>Instagram</title>
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg></a>
-            <a href="https://www.linkedin.com/in/luis-felipe-39699220b/" class="item__fixo"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-linkedin">
-                    <title>LinkedIn</title>
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                </svg></a>
-            <a href="mailto:luisftexeira@gmail.com" class="item__fixo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                </svg></a>
+            <div>
+                <button class="toggle-links item__fixo">
+                    <svg id="openLinks" display="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-link" viewBox="0 0 16 16">
+                        <path
+                            d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                        <path
+                            d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                    </svg>
+                    <svg id="closelinks" display="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-x-octagon" viewBox="0 0 16 16">
+                        <path
+                            d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+            </div>
+            <div class="links">
+                <a href="https://github.com/LuisFelipeTeixeira" class="item__fixo"><svg
+                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg></a>
+                <a href="https://www.instagram.com/luisftexeira/" class="item__fixo"><svg
+                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
+                <a href="https://www.linkedin.com/in/luis-felipe-39699220b/" class="item__fixo"><svg
+                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
+                <a href="mailto:luisftexeira@gmail.com" class="item__fixo"><svg xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg></a>
+            </div>
             <hr class="linha__fixa">
         </aside>
+
         <section class="container__apresentacao">
             <div class="conteudo__apresentacao">
                 <p class="apresentacao">Olá, meu nome é</p>
                 <h2 class="apresentacao__nome">Luis Felipe.</h2>
-                <h2 class="apresentacao__profissao">Eu construo coisas para web.</h2>
+                <h2 class="apresentacao__profissao">Futuro programador</h2>
                 <p class="apresentacao__texto">Sou um entusiasta da programação de 20 anos com uma paixão
                     ardente por desenvolvimento. Ao longo dos últimos dois anos, mergulhei de cabeça no mundo
                     da programação, moldando minha habilidade técnicas através de projetos pessoais.
@@ -108,57 +144,20 @@
             </div>
         </section>
 
-        <section class="container_certificado" id="certificado">
-            <div class="certificado__introducao__div">
-                <p class="certificado__introducao"><span class="certificado__span">02. </span>Minhas certificações</p>
-                <hr class="decoracao__certificado">
+        <section class="container__estudo">
+            <div class="estudo__introducao__div">
+                <p class="estudo__introducao"><span class="estudo__span">02. </span>Meus projetos</p>
+                <hr class="decoracao__estudo">
             </div>
-            <div class="certificado__conteudo">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#certificado" onclick="showCertificate('certificado1')">Certificado 1</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado2')">Certificado 2</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado3')">Certificado 3</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado4')">Certificado 4</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado5')">Certificado 5</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado6')">Certificado 6</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado7')">Certificado 7</a></li>
-                        <li><a href="#certificado" onclick="showCertificate('certificado8')">Certificado 8</a></li>
-                    </ul>
-                </div>
-                <div class="main-content" id="certificado">
-                    <div id="certificado1" class="certificado">
-                        <img src="img/certificado/certificado-html-css.jpg" alt="">
-                    </div>
-                    <div id="certificado2" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-java.jpg" alt="">
-                    </div>
-                    <div id="certificado3" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-python1.jpg" alt="">
-                    </div>
-                    <div id="certificado4" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-python2.jpg" alt="">
-                    </div>
-                    <div id="certificado5" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-sql-alura.jpg" alt="">
-                    </div>
-                    <div id="certificado6" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-impacta-sql-16.jpg" alt="">
-                    </div>
-                    <div id="certificado7" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-impacta-sql-22.jpg" alt="">
-                    </div>
-                    <div id="certificado8" class="certificado" style="display: none;">
-                        <img src="img/certificado/certificado-impacta-sql-40.jpg" alt="">
-                    </div>
-                </div>
+            <div class="estudo__introducao">
+
             </div>
         </section>
 
         <article class="container__projeto" id="projeto">
             <div class="projeto__introducao__div">
-                <p class="projeto__introducao"><span class="projeto__span">03. </span>Meus projetos</p>
-                <hr class="decoracao__projeto">
+                <p class="projeto__introducao"><span class="projeto__span">02. </span>Meus projetos</p>
+                <hr class="decoracao__projeto">w
             </div>
             <section class="projeto__conteudo">
                 <div class="projeto"><img src="img/projeto/psico-jessica.png" alt="" class="projeto__img"></div>
@@ -178,7 +177,8 @@
                         <p>javascript</p>
                     </div>
                     <div class="projeto__icon">
-                        <a href="https://github.com/LuisFelipeTeixeira/Landing-page-psicojessica" class="projeto__icones">
+                        <a href="https://github.com/LuisFelipeTeixeira/Landing-page-psicojessica"
+                            class="projeto__icones">
                             <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-github">
@@ -188,7 +188,8 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="https://luisfelipeteixeira.github.io/Landing-page-psicojessica/" class="projeto__icones icon_site">
+                        <a href="https://luisfelipeteixeira.github.io/Landing-page-psicojessica/"
+                            class="projeto__icones icon_site">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right"
                                 viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -201,10 +202,9 @@
                 </div>
             </section>
             <section class="projeto__conteudo__contrario">
-                <div class="projeto"><img src="img/projeto/pokemon.png" alt="" class="projeto__img"></div>
-                </div>
+                <div class="projeto"><img src="img/projeto/alura_studies.png" alt="" class="projeto__img"></div>
                 <div class="dividir__conteudo__contrario">
-                    <h2 class="projeto__titulo__contrario">Pokedex</h2>
+                    <h2 class="projeto__titulo__contrario">Alura Studies</h2>
                     <p class="projeto__texto__contrario">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
                         consequuntur amet quibusdam ducimus
                         eos minus magnam voluptatum repellendus, maiores adipisci dignissimos, dolores modi! Facilis
@@ -212,9 +212,10 @@
                         consectetur neque harum vel eius?
                     </p>
                     <div class="projeto__tecnologias__contrario">
-                        <p>HTML</p>
+                        <p>React</p>
+                        <p>TypeScript</p>
+                        <p>SCSS</p>
                         <p>CSS</p>
-                        <p>javascript</p>
                     </div>
                     <div class="projeto__icon__contrario">
                         <a href="https://github.com/LuisFelipeTeixeira/Pokedex" class="projeto__icones__contrario">
@@ -227,7 +228,8 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="https://luisfelipeteixeira.github.io/Pokedex/" class="projeto__icones__contrario icon_site__contrario">
+                        <a href="https://luisfelipeteixeira.github.io/Pokedex/"
+                            class="projeto__icones__contrario icon_site__contrario">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right"
                                 viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -266,6 +268,45 @@
                     </div>
                 </div>
             </section>
+            <section class="projeto__conteudo__contrario">
+                <div class="projeto"><img src="img/projeto/pokemon.png" alt="" class="projeto__img"></div>
+                <div class="dividir__conteudo__contrario">
+                    <h2 class="projeto__titulo__contrario">Pokedex</h2>
+                    <p class="projeto__texto__contrario">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        consequuntur amet quibusdam ducimus
+                        eos minus magnam voluptatum repellendus, maiores adipisci dignissimos, dolores modi! Facilis
+                        ratione
+                        consectetur neque harum vel eius?
+                    </p>
+                    <div class="projeto__tecnologias__contrario">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>javascript</p>
+                    </div>
+                    <div class="projeto__icon__contrario">
+                        <a href="https://github.com/LuisFelipeTeixeira/Pokedex" class="projeto__icones__contrario">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://luisfelipeteixeira.github.io/Pokedex/"
+                            class="projeto__icones__contrario icon_site__contrario">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-box-arrow-up-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                <path fill-rule="evenodd"
+                                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <div class="projetos_link__area">
                 <a href="https://github.com/LuisFelipeTeixeira" class="projetos_link">Ver Mais</a>
             </div>
@@ -284,18 +325,22 @@
             </div>
         </section>
 
-        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" class="bi bi-arrow-up-short button-top" viewBox="0 0 16 16">
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-short button-top"
+                viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
-            </svg></button>
+            </svg>
+        </button>
+
         <footer class="footer">
-            <a href="" class="footer__texto">Projetado e construído por Luis Felipe Teixeira! &copy 2024 | Todos os
+            <a href="" class="footer__texto">Projetado e construído por Luis Felipe Teixeira | &copy 2024 | Todos os
                 direitos reservados</a>
         </footer>
         <script type="text/javascript" src="js/nav-efeito.js"></script>
-        <script type="text/javascript" src="js/certificado.js"></script>
         <script type="text/javascript" src="js/scroll-button.js"></script>
+        <script type="text/javascript" src="js/link-fixo.js"></script>
+        <script type="text/javascript" src="js/change-image.js"></script>
 </body>
 
 </html>

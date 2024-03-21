@@ -52,33 +52,76 @@
 
 @media only screen and (max-width: 1024px) {}
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
+    .container__apresentacao {
+        height: 65vh;
+        margin: 12rem 0 0 3rem;
+    }
+
+    .conteudo__apresentacao {
+        width: 85%;
+    }
+
+    .apresentacao {
+        font-size: 1.4rem;
+    }
+
+    .apresentacao__nome {
+        font-size: 4rem
+    }
+
+    .apresentacao__profissao {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    .apresentacao__texto {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
 
 @media screen and (max-width: 770px) and (min-width: 760px) {}
 
 
 @media screen and (max-width: 580px) {
-    .container__apresentacao {
+    :root {
+        --font-size-titulo: 1.8rem;
+        --font-size-subtitulo: 1.5rem;
+        --font-size-texto: 0.9rem;
     }
-
     .conteudo__apresentacao {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 4rem 0 0 4rem;
+        margin: 8rem 0 0 4rem;
+    }
+
+    .container__apresentacao {
+        margin: 0;
     }
 
     .apresentacao {
-        font-size: 0.8rem;
+        font-size: var(--font-size-texto);
     }
 
     .apresentacao__nome {
-        font-size: 1.8rem;
+        font-size: var(--font-size-titulo)
     }
 
     .apresentacao__profissao {
-        font-size: 1.5rem;
+        font-size: var(--font-size-subtitulo);
     }
 
-    .apresentacao__texto {}
+    .apresentacao__texto {
+        width: 85%;
+        font-size: var(--font-size-texto);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container__apresentacao {
+        margin-top: 2rem;
+    }
+
 }

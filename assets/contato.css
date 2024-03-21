@@ -98,3 +98,114 @@
 .footer:hover a{
     color: var(--cor-font-verde);
 }
+
+@media only screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 900px) {
+    .contato {
+        width:100vw;
+        height: auto;
+    }
+
+    .contato__div {
+        width: 100%;
+        margin: 8rem 0 5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__titulo {
+        margin: 2rem 1rem;
+        font-size: 2rem;
+    }
+
+    .contato__texto {
+        width: 70%;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        letter-spacing: 1.5wwwwpx;
+    }
+
+    .contato__botao {
+        margin: 1rem 0 0 0;
+    }
+
+    .contato__introducao {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        width: 100vw;
+        margin: 6rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__texto {
+        width: 58%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 760px) {}
+
+
+@media screen and (max-width: 580px) {
+    :root {
+        --font-size-titulo: 1.8rem;
+        --font-size-subtitulo: 1.5rem;
+        --font-size-texto: 0.9rem;
+        --font-size-titulo_img: 1rem;
+    }
+
+    .contato {
+        width:100vw;
+        height: auto;
+    }
+
+    .contato__div {
+        width: 100%;
+        margin: 8rem 0 5rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__titulo {
+        margin: 0 0 2rem 0;
+        font-size: var(--font-size-subtitulo);
+    }
+
+    .contato__introducao {
+        font-size: var(--font-size-texto);
+    }
+
+    .contato__texto {
+        width: 80%;
+        font-size: var(--font-size-texto);
+    }
+
+    .contato__botao {
+        margin: 1rem 0 0 0;
+        padding: 1.2rem;
+        font-size: var(--font-size-texto);
+    }
+
+    .footer {
+        width: 100vw;
+        margin: 6rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__texto {
+        width: 80%;
+        font-size: var(--font-size-texto);
+    }
+
+}
