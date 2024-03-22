@@ -124,7 +124,7 @@
     .item__fixo:hover svg {
         transform: translateY(-1px);
     }
-
+    
     .links a {
         opacity: 0;
         transition: opacity 0.5s ease;
@@ -182,6 +182,7 @@
     border-radius: 10px;
     background-color: transparent;
     transition: filter 0.5s ease;
+    z-index: 1000;
 }
 
 .button-top {

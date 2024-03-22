@@ -59,8 +59,9 @@
 .projeto__conteudo {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     padding: 1rem 7rem 7rem 7rem;
+    justify-content: center;
 }
 
 .projeto {
@@ -165,9 +166,9 @@
 .projeto__conteudo__contrario {
     display: flex;
     flex-direction: row-reverse;
-    width: 80%;
+    width: 100%;
     padding: 1rem 7rem 7rem 7rem;
-    align-items: left;
+    justify-content: center;
 }
 
 .projeto__img__contrario {
@@ -257,6 +258,12 @@
 @media only screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 900px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .container__projeto {
         display: flex;
         flex-direction: column;
@@ -304,10 +311,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        filter: blur(0px);
     }
 
     .projeto::before {
         display: none;
+        width: 0%;
+        height: 0%;
+        background-color: transparent;
+        opacity: 0;
     }
 
     .projeto__conteudo {
@@ -359,7 +371,7 @@
         padding-bottom: 3rem;
     }
 
-    
+
     .projeto__titulo__contrario {
         width: 100%;
         text-align: center;
@@ -451,10 +463,6 @@
         justify-content: center;
     }
 
-    .projeto::before {
-        display: none;
-    }
-
     .projeto__conteudo {
         width: 100%;
         display: flex;
@@ -490,7 +498,7 @@
         padding: 0;
     }
 
-    .projeto__tecnologias p{
+    .projeto__tecnologias p {
         font-size: var(--font-size-texto);
     }
 
@@ -499,26 +507,29 @@
         display: flex;
         flex-direction: column;
         padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .dividir__conteudo__contrario {
-        width: 100%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom: 3rem;
     }
 
-    
+
     .projeto__titulo__contrario {
         width: 100%;
         text-align: center;
-        font-size: 1rem;
+        font-size: var(--font-size-titulo_img);
     }
 
     .projeto__texto__contrario {
         width: 100%;
         margin: 0;
+        font-size: var(--font-size-texto);
         text-align: center;
         line-height: 1.5;
         letter-spacing: 1px;
@@ -530,7 +541,7 @@
         padding: 0;
     }
 
-    .projeto__tecnologias__contrario p{
+    .projeto__tecnologias__contrario p {
         font-size: var(--font-size-texto);
     }
 
