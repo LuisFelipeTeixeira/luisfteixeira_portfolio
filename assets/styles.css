@@ -6,6 +6,7 @@
 @import url(projetos.css); 
 @import url(contato.css);
 @import url(estudos.css);
+@import url(skills.css);
 
 :root {
     --cor-principal: #121C66;
